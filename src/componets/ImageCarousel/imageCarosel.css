@@ -1,0 +1,76 @@
+.carsouselContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.carsouselContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transform: img 0.5s ease-in-out;
+}
+
+.buttonArraow{
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    margin-left: 20px;
+    color: white;
+    z-index: 2;
+
+}
+
+.buttonArraowprev{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 50%;
+    margin-left: 20px;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    left: 10px;
+}
+
+.buttonArraowFrawd{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 50%;
+    margin-left: 20px;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    right: 10px;
+}
+
+.crcle{
+    position: absolute;
+    bottom: 1rem;
+    /* background-color: aqua; */
+}
+
+.crcle .dot{
+    /* width: 5px;
+    max-height: 5px;
+    background-color: rgb(212, 212, 212);
+    margin: 5px;
+    border-radius: 50%; */
+
+    width: 0.5rem;
+    height: 0.5rem;
+  background-color: rgb(173, 173, 173);
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.crcle .activeCrcile{
+    background-color: rgb(43, 43, 43);
+    
+}
